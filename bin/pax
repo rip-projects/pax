@@ -1,0 +1,15 @@
+#!/usr/bin/env node
+
+require('colors');
+require('shelljs/global');
+
+var fs = require('fs'),
+    CLI = require('../lib/cli').CLI;
+
+(function() {
+    "use strict";
+
+    var cli = new CLI();
+    cli.start();
+
+})();
