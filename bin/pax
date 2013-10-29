@@ -9,7 +9,15 @@ var fs = require('fs'),
 (function() {
     "use strict";
 
+    global.DEBUG_START_TIME = (new Date()).getTime();
+
     var cli = new CLI();
+
+    cli.report = function() {
+        var DEBUG_STOP_TIME = (new Date()).getTime();
+
+        console.log('pax elapsed: ' + (DEBUG_STOP_TIME - DEBUG_START_TIME));
+    };
     cli.start();
 
 })();
