@@ -1,6 +1,6 @@
 {
-  "name": "pax",
-  "version": "0.0.1",
+  "name": "xinix-pax",
+  "version": "0.0.2",
   "description": "pax is multi package management",
   "bin": {
     "pax": "bin/pax"
@@ -8,8 +8,17 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Jafar Shadiq <reekoheek@gmail.com>",
-  "license": "MIT",
+  "author": {
+    "name": "Jafar Shadiq",
+    "email": "reekoheek@gmail.com"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/reekoheek/pax/blob/master/LICENSE"
+    }
+  ],
+  "preferGlobal" : true,
   "dependencies": {
     "shelljs": "~0.2.6",
     "lodash": "~2.2.1",
