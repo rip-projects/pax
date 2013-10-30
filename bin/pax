@@ -15,8 +15,8 @@ var fs = require('fs'),
 
     cli.report = function(status) {
         var DEBUG_STOP_TIME = (new Date()).getTime();
-        console.log('done with:' + ((status === 0) ? 'success' : 'error'));
-        console.log('pax elapsed: ' + (DEBUG_STOP_TIME - DEBUG_START_TIME));
+        console.log(((status === 0) ? cli.DONE_SUCCESS : cli.DONE_ERROR));
+        console.log('Elapsed time: ' + ((DEBUG_STOP_TIME - DEBUG_START_TIME) / 1000) + 'ms');
     };
     cli.start();
 
