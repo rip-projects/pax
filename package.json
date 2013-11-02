@@ -5,6 +5,7 @@
   "bin": {
     "pax": "bin/pax"
   },
+  "main": "lib",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -18,7 +19,7 @@
       "url": "https://github.com/reekoheek/pax/blob/master/LICENSE"
     }
   ],
-  "preferGlobal" : true,
+  "preferGlobal": true,
   "dependencies": {
     "shelljs": "~0.2.6",
     "lodash": "~2.2.1",
@@ -27,7 +28,8 @@
     "simply-deferred": "~2.4.0",
     "prompt": "~0.2.11",
     "colors": "~0.6.2",
-    "resolve": "~0.5.1"
+    "resolve": "~0.5.1",
+    "sprintf": "~0.1.3"
   },
   "repository": {}
 }

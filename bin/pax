@@ -3,21 +3,7 @@
 require('colors');
 require('shelljs/global');
 
-var fs = require('fs'),
-    CLI = require('../lib/cli').CLI;
+var pax = require('../lib'),
+    cli = require('../lib/cli');
 
-(function() {
-    "use strict";
-
-    global.DEBUG_START_TIME = (new Date()).getTime();
-
-    var cli = new CLI();
-
-    cli.report = function(status) {
-        var DEBUG_STOP_TIME = (new Date()).getTime();
-        console.log(((status === 0) ? cli.DONE_SUCCESS : cli.DONE_ERROR));
-        console.log('Elapsed time: ' + ((DEBUG_STOP_TIME - DEBUG_START_TIME) / 1000) + 'ms');
-    };
-    cli.start();
-
-})();
+cli.run(pax);
