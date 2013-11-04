@@ -1,6 +1,6 @@
 {
   "name": "xinix-pax",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "pax is multi package management",
   "bin": {
     "pax": "bin/pax"
