@@ -1,9 +1,10 @@
 {
   "name": "xinix-pax",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "pax is multi package management",
   "bin": {
-    "pax": "bin/pax"
+    "pax": "bin/pax",
+    "xpax": "bin/xpax"
   },
   "main": "lib",
   "scripts": {
