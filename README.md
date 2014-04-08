@@ -35,5 +35,14 @@ cd $my-project
 xpax init $my-archetype
 ```
 
+## Task
+
+Will show you defined tasks from archetype
+
+```
+cd $my-project
+xpax task
+```
+
 
 
