@@ -1,9 +1,0 @@
-#!/usr/bin/env node
-
-require('colors');
-require('shelljs/global');
-
-var pax = require('../lib'),
-    cli = require('../lib/cli');
-
-cli.run(pax);
