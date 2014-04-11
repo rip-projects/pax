@@ -1,6 +1,6 @@
 {
   "name": "xinix-pax",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "xpax is multi package management",
   "bin": {
     "xpax": "bin/xpax"
@@ -39,5 +39,12 @@
     "fstream-ignore": "0.0.7",
     "lru-cache": "^2.5.0"
   },
-  "repository": {}
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/reekoheek/pax.git"
+  },
+  "bugs": {
+    "url": "https://github.com/reekoheek/pax/issues"
+  },
+  "homepage": "https://github.com/reekoheek/pax"
 }
