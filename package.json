@@ -16,7 +16,7 @@
   "licenses": [
     {
       "type": "MIT",
-      "url": "https://github.com/reekoheek/pax/blob/master/LICENSE"
+      "url": "https://github.com/xinix-technology/pax/blob/master/LICENSE"
     }
   ],
   "preferGlobal": true,
@@ -41,10 +41,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/reekoheek/pax.git"
+    "url": "https://github.com/xinix-technology/pax.git"
   },
   "bugs": {
-    "url": "https://github.com/reekoheek/pax/issues"
+    "url": "https://github.com/xinix-technology/pax/issues"
   },
-  "homepage": "https://github.com/reekoheek/pax"
+  "homepage": "https://github.com/xinix-technology/pax"
 }
