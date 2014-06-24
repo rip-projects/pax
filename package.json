@@ -1,6 +1,6 @@
 {
   "name": "xinix-pax",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "xpax is multi package management",
   "bin": {
     "xpax": "bin/xpax"
@@ -37,7 +37,10 @@
     "rimraf": "^2.2.6",
     "fstream-ignore": "0.0.7",
     "lru-cache": "^2.5.0",
-    "cli-color": "^0.3.2"
+    "cli-color": "^0.3.2",
+    "decompress-zip": "0.0.8",
+    "tar": "^0.1.19",
+    "junk": "^0.3.0"
   },
   "repository": {
     "type": "git",
