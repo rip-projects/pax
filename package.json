@@ -49,5 +49,8 @@
   "bugs": {
     "url": "https://github.com/xinix-technology/pax/issues"
   },
-  "homepage": "https://github.com/xinix-technology/pax"
+  "homepage": "https://github.com/xinix-technology/pax",
+  "devDependencies": {
+    "gulp": "^3.8.1"
+  }
 }
