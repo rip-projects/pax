@@ -1,48 +1,61 @@
 PAX
 ===
 
-PAX is Package automation control, and so on.
+[![License](http://img.shields.io/npm/l/xinix-pax.svg?style=flat-square)](https://github.com/xinix-technology/pax/blob/master/LICENSE)
+[![Download](http://img.shields.io/npm/dm/xinix-pax.svg?style=flat-square)](https://github.com/xinix-technology/pax)
+[![NPM](http://img.shields.io/npm/v/xinix-pax.svg?style=flat-square)](https://github.com/xinix-technology/pax)
 
-# Install
+pax / xpax (cli) / xinix-pax (npm) adalah sebuah Aplikasi package automation control. Tujuannya adalah untuk memberikan kemudahan kepada developer untuk mengatur siklus kerja dari aplikasi yang dibangunnya.
 
-```
+pax secara umum saat ini digunakan secara internal pada PT Sagara Xinix Solusitama untuk membantu dalam pengembangan piranti lunak dan sistem baik untuk bahasa pemrograman PHP maupun Javascript.
+
+Dengan menggunakan pax, mempermudah pekerjaan seperti ini:
+
+- Inisialisasi proyek dengan menggunakan archetype yang telah ada
+- Inisialisasi proyek dengan menggunakan proyek lain sebagai archetype
+- Satu perintah untuk mengatur ketergantungan pustaka baik itu PHP (composer) maupun Javascript (bower atau npm).
+- Menjalankan server development secara internal.
+- Mengatur script untuk melakukan migrasi antar versi
+
+## Instalasi
+
+pax di-install secara global untuk menambahkan perintah baru pada terminal / command-line anda. pax dibangun di atas teknologi node.js sehingga anda harus menginstall node.js terlebih dahulu hingga anda dapat menggunakan npm yang dibutuhkan untuk melakukan instalasi.
+
+```bash
 npm install -g xinix-pax
 ```
 
-# Archetype
+## Archetype
 
-Archetype is scaffolding template for your project. It will help you initiating
-project.
+Archetype adalah sebuah konsep scaffolding dari template proyek. Hal ini dapat membantu anda untuk memulai sebuah proyek.
 
-# How to
+## Bagaimana cara melakukan sesuatu?
 
-We want you to use Pax intuitively, as you can use npm, bower, composer before.
+Kami menginginkan developer dapat untuk menggunakan pax secara intuitif seperti saat mereka menggunakan npm, bower, composer, dll.
 
-## Search
+### Pencarian archetype yang tersedia
 
-```
-xpax search $my-archetype
-```
+Anda ingin memulai sebuah proyek dan anda ingin tahu ada archetype apa yang sudah tersedia di sistem pax pada saat ini? Anda dapat melakukan pencarian dengan mengetik pada terminal perintah berikut ini,
 
-## Init
-
-Init action slightly different from npm, bower, or composer. Because PAX has archetype
-to scaffold your project.
-
-```
-mkdir $my-project
-cd $my-project
-xpax init $my-archetype
+```bash
+xpax search [$ARCHETYPE_TO_SEARCH]
 ```
 
-## Task
+### Inisialisasi proyek
 
-Will show you defined tasks from archetype
+Perintah inisialisasi sedikit berbeda dari npm, bower atau pun composer. Karena pax memiliki archetype untuk melakukan scaffolding pada proyek anda. Pada saat menjalankan perintah init, argumen ke-3 dari perintah ini adalah nama archetype yang ingin digunakan. Selain itu argumen ke-3 ini juga bisa berupa url dari git.
+
+```bash
+mkdir $PROJECT_DIR
+cd $PROJECT_DIR
+xpax init $ARCHETYPE_NAME|$ARCHETYPE_GIT_URL
+```
+
+### Melakukan tugas tertentu
+
+Perintah "task" akan menampilkan tugas-tugas yang ada yang bisa dilakukan dalam sebuah skup proyek tertentu. Untuk menambah tugas-tugas yang baru dapat dilakukan dengan menambah scripting pada file paxfile.js di direktori proyek anda.
 
 ```
-cd $my-project
+cd $PROJECT_DIR
 xpax task
 ```
-
-
-
