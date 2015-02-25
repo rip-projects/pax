@@ -1,6 +1,8 @@
 PAX
 ===
 
+> This project is already discontinued, to see the replacement at https://github.com/xinix-technology/pas
+
 [![License](http://img.shields.io/npm/l/xinix-pax.svg?style=flat-square)](https://github.com/xinix-technology/pax/blob/master/LICENSE)
 [![Download](http://img.shields.io/npm/dm/xinix-pax.svg?style=flat-square)](https://github.com/xinix-technology/pax)
 [![NPM](http://img.shields.io/npm/v/xinix-pax.svg?style=flat-square)](https://github.com/xinix-technology/pax)
